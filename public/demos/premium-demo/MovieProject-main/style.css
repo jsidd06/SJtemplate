@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* header */
+.SJ-header-SJ {
+    max-width: 96%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.SJ-header-SJ a {
+    text-decoration: none;
+    color: red;
+}
+
+.SJ-header-SJ a:hover {
+    color: black;
+}
+
+/* end header */
+/* navbar */
+.SJ-navbar-SJ {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.SJ-navbar-SJ ul {
+    padding: 5px;
+}
+
+.SJ-navbar-SJ ul li {
+    display: inline;
+    padding: 10px;
+}
+
+.SJ-navbar-SJ ul li a {
+    text-decoration: none;
+    font-size: large;
+    color: red;
+}
+
+.SJ-navbar-SJ a:hover {
+    color: black;
+}
+
+/* end navbar */
+
+/* contanier-1 */
+.SJ-container-1-SJ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 2px;
+}
+
+.SJ-box-SJ{
+    max-width: 400px;
+}
+
+.SJ-container-1-SJ img {
+    width: 400px;
+}
+
+.SJ-container-2-SJ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.SJ-box-1-SJ{
+    max-width: 90%;
+    margin: auto;
+}
+
+.SJ-container-2-SJ img {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.SJ-container-3-SJ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.SJ-container-3-SJ img {
+max-width: 400px;
+}
+.SJ-container-4-SJ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.SJ-container-4-SJ img {
+    max-width: 400px;
+}
+
+.SJ-container-5-SJ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.SJ-container-5-SJ img{
+    max-width: 400px;
+}
+.SJ-box-SJ h3 {
+    margin: 10px;
+}
+
+.SJ-box-SJ p {
+    margin: 2px;
+    padding: 2px;
+}
+
+.SJ-box-SJ input[type="submit"] {
+    padding: 6px 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+.SJ-box-1-SJ h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.SJ-box-1-SJ p {
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+}
+.SJ-box-1-SJ{
+    text-align: center;
+    position: relative;
+}
+.SJ-box-1-SJ input[type='submit']{
+    padding: 6px 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+.SJ-box-10-SJ {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+.SJ-box-10-SJ h3 {
+    margin: 10px;
+}
+
+.SJ-box-10-SJ input[type="submit"] {
+    padding: 6px 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+/* form group */
+.SJ-container-7-SJ{
+border: 1px solid ;
+margin:1%;
+padding:2%;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.SJ-container-7-SJ div > h1{
+    margin: auto 3rem auto auto;
+}
+.SJ-form-group-SJ input{
+    margin:9px;
+    padding:5px ;
+    text-align: center;
+    border-radius: 10px;
+}
+.SJ-form-group-SJ button[type="submit"]{
+    padding: 2px 50px;
+    margin: 2px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.SJ-form-group-SJ button[type="submit"]:hover{
+    color: rebeccapurple;
+}
+.SJ-form-group-SJ a{
+    text-decoration: none;
+    color: black;
+}
+.SJ-form-group-SJ a:hover{
+    color: rebeccapurple;
+}
+/* end form group */
+/* start footer */
+.SJ-box-11-SJ {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.SJ-box-11-SJ h3 {
+    margin: 10px;
+}
+
+.SJ-footer-SJ {
+    margin: 1px;
+    padding: 1em;
+    text-align: center;
+}
+/* end footer */
+/* start scroll bar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: initial;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+/* end scroll bar */

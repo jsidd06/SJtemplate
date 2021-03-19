@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy cool new product</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://kit.fontawesome.com/1058189247.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Aceepted card:- <i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-amex"></i></h3>
+        <img src="/<%=product.image%>" alt="<%=product.name%> "/> <br>
+        <div class="description">
+          <h2>Template : <%=product.name%> </h3>
+          <h3>Rs : <%= product.price %> </h5>
+        </div>
+      <button type="button" id="checkout-button">Checkout</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    // Create an instance of the Stripe object with your publishable API key
+    var stripe = Stripe("pk_live_51IUrjqFlQzKCNGfXRenVKlK9Xehr9Zy0t6M96WD2tdFupWgML3vkV4Z9RaltALO4P5G7ytMTWAnBGm6MPlW9ecO200On0HjR0k");
+    var checkoutButton = document.getElementById("checkout-button");
+
+    checkoutButton.addEventListener("click", function () {
+      fetch("/create-checkout-session", {
+        method: "POST",
+        
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (session) {
+          return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function (result) {
+          // If redirectToCheckout fails due to a browser or network
+          // error, you should display the localized error message to your
+          // customer using error.message.
+          if (result.error) {
+            alert(result.error.message);
+          }
+        })
+        .catch(function (error) {
+          console.error("Error:", error);
+        });
+    });
+  </script>
+</html>

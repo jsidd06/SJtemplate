@@ -1,0 +1,1 @@
+module.exports.responsiveTemplate = "You can easily download this project it's to totally free of cost"

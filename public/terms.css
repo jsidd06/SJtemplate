@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:1px;
+    background: linear-gradient(to bottom, #ebd1ee, #6DD5FA, #4f29b9);
+}
+.container{
+    border:1px solid ;
+    margin:20px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+h1, p{
+    margin:10px;
+}
+ul{
+    padding:20px;
+}
+li{
+    padding:2px;
+}
+/* start scroll bar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: initial;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ebd1ee, #6DD5FA, #4f29b9);
+    border-radius: 50px;
+}
+
+/* end scroll bar */

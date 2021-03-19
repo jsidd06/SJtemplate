@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,jQuery,XML,DOM,Bootstrap,Java,Web development,SJ,programming,training,learning,quiz,primer,lessons,references,examples,exercises,source code,colors,demos,tips">
+  <link rel="stylesheet" href="premium.css">
+  <title>Fun to food</title>
+</head>
+<body>
+  <!-- header -->
+  <div class="SJ-header-SJ">
+    <h1><a href="">Premium</a></h1>
+    <div class="SJ-navbar-SJ" id="mynavbar">
+      <ul>
+        <li><a href="/food">Home</a></li>
+        <li><a href="/free">Free</a></li>
+        <li><a href="/premium">Premium</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end header -->
+  <!-- main container -->
+<div class="SJ-container-1-SJ" id="premium">
+      <% products.forEach(product => { %>
+      <div class="SJ-box-1-SJ">
+        <img src="<%= product.image %> ">
+        <h3><%= product.name %> </h3>
+        <p><%= product.description %> </p>
+        <a href="checkout/<%=product.id%>" >Buy</a>
+        <a href="<%= product.demoPath %> ">Demo</a>
+        
+  </div>
+  <% }) %>
+  <!-- end main container -->
+  <!-- start footer -->
+  <div class="SJ-footer-SJ">
+    <h3>Copyright &copy; 2021 Made by Siddharth Jain</h3>
+    <p>Responsive or without responsive templates</p>
+  </div>
+  <!-- end footer -->
+</body>
+</html>
