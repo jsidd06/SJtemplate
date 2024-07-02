@@ -1,1 +1,1 @@
-![Example GIF](./public/images/s.gif)
+![Example GIF](./s.gif)
